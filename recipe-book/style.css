@@ -1,0 +1,116 @@
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(3, 41, 91);
+  padding: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.wrap {
+  width: 90%;
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.search-widget {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 15px 50px;
+  background-color: rgb(210, 212, 225);
+  border-radius: 30px;
+}
+
+.search-widget input {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 1px 1px 5px rgb(152, 152, 152), -1px -1px 5px rgb(152, 152, 152);
+  padding: 4px 13px;
+}
+.search-widget input:hover {
+  letter-spacing: 1px;
+}
+
+.search-widget button {
+  background-color: transparent;
+  border: 1px solid rgb(3, 41, 91);
+  border-radius: 5px;
+  color: black;
+  padding: 4px 13px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.search-widget button:hover {
+  background-color: rgb(3, 41, 91);
+  border: none;
+  color: white;
+}
+
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 3px gainsboro;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.widget img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.widget a {
+  min-width: 150px;
+  padding: 10px;
+  background-color: rgb(3, 41, 91);
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+}
+
+.widget h2 {
+}
+
+.widget p {
+  color: rgb(76, 76, 76);
+  margin: 20px;
+  flex-basis: 50%;
+}
+
+.alert {
+  position: fixed; /* Ekranın sabit bir konumuna yerleştirir */
+  bottom: 20px; /* Ekranın altından 20px yukarıda */
+  right: 20px; /* Ekranın sağından 20px içeride */
+  width: 300px;
+  background-color: red;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  display: flex; /* Başlangıçta gizli */
+  opacity: 0; /* Başlangıçta şeffaf */
+  transition: opacity 0.5s ease; /* Opacity geçiş efekti */
+}
