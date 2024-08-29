@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(232, 232, 232);
+}
+.big-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.wrapper {
+  display: grid;
+  margin: 200px auto;
+  width: 600px;
+  align-items: center;
+  background-color: rgb(251, 251, 251);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.231),
+    -5px -5px 10px rgba(0, 0, 0, 0.231);
+  padding: 20px 30px;
+  gap: 10px;
+}
+
+.wrapper h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wrapper .top-p {
+  margin-bottom: 10px;
+}
+
+.wrapper .bill-p {
+  text-align: left;
+}
+
+.wrapper .tip {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.059);
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.167);
+}
+
+.wrapper .bill {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.059);
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.167);
+}
+
+.wrapper button {
+  margin-top: 5px;
+  background-color: rgb(45, 190, 45);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+.wrapper .bill-amount {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.alert {
+  background-color: crimson;
+  padding: 10px;
+  text-align: right;
+  position: absolute;
+  /* Bottom ile arasındaki pixel farkı */
+  bottom: 5px;
+  right: 10px;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.alert h2 {
+  font-family: monospace;
+}
