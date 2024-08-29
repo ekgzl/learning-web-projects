@@ -1,0 +1,475 @@
+html {
+  /* Geçişler yumuşak olması açısından*/
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 100px 0;
+  background: #122e44;
+}
+
+.section .section-title {
+  margin-bottom: 30px;
+}
+.section .section-title h2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.section .section-title h2:hover {
+  background-color: #147563c9;
+}
+
+/* -----------------------HEADER------------------------*/
+
+header {
+  background: rgb(44, 37, 37);
+
+  border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+
+  /* Sayfanın tepesine yapışır scroll ile birlikte gelir.*/
+  position: fixed;
+
+  width: 100%;
+
+  /* Sayfada 3. eksende yukarı çıkartır ve diğer elementleri itmesini engeller.*/
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+
+  /* İçindeki itemleri sağa sola sınırla*/
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin: 0px 6px;
+  width: 85%;
+
+  padding: 15px 0;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li a {
+  margin-right: 15px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-links li a:hover {
+  background-color: #147563c9;
+}
+
+.navbar .logo h2 a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  margin-left: 55px;
+}
+
+/* --------------------ANASAYFA---------*/
+
+.inner-anasayfa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto;
+  width: 80%;
+  color: white;
+}
+
+.child-anasayfa {
+  /* Kapsayıcının %45'ini kapatabilir bu content*/
+  flex-basis: 45%;
+}
+
+.child-anasayfa h1 {
+  font-size: 65px;
+  color: #25d3b3c9;
+  line-height: 72px;
+}
+.child-anasayfa h1 .span-child {
+  color: #ea5e5ec9;
+}
+
+.child-anasayfa p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.child-anasayfa .btn {
+  background: #24caac;
+  padding: 12px 30px;
+  border: 1px solid #24caac;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.child-anasayfa .btn a {
+  color: white;
+  font-weight: 700;
+}
+
+.child-anasayfa .btn:hover {
+  background: transparent;
+}
+
+/*-------YAZILIMLAR-------*/
+
+.upper-yazilimlar h2 {
+  color: white;
+  font-size: 35px;
+  padding: 5px 740px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.upper-yazilimlar h2:hover {
+  background-color: #24caac;
+}
+
+.yazilimlar .inner-yazilimlar {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.yazilimlar .inner-yazilimlar .child-yazilimlar .baslik-child-yazilimlar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.yazilimlar .inner-yazilimlar .child-yazilimlar .baslik-child-yazilimlar .icon {
+  padding: 0px 10px;
+  color: #24caac;
+  font-size: 30px;
+}
+.yazilimlar .inner-yazilimlar .child-yazilimlar .baslik-child-yazilimlar h3 {
+  font-size: 22px;
+  color: white;
+}
+.yazilimlar .inner-yazilimlar .child-yazilimlar p {
+  color: white;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.yazilimlar .inner-yazilimlar .child-yazilimlar {
+  transition: all 0.4s ease-in-out;
+  background: #273c4d6e;
+  margin: 0 10px;
+  flex-basis: 31%;
+}
+
+.yazilimlar .inner-yazilimlar .child-yazilimlar:hover {
+  border: 1px solid #24caac;
+}
+
+/*------------SERTİFİKALARIM-----------*/
+
+.sertifika {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sertifika .upper-sertifika h2 {
+  color: white;
+  font-size: 35px;
+  padding: 5px 740px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sertifika .upper-sertifika h2:hover {
+  background-color: #24caac;
+}
+
+.sertifika .inner-sertifika {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.sertifika .inner-sertifika .child-sertifika {
+  background: #273c4d6e;
+  flex-basis: 20%;
+  padding: 20px 10px 5px 10px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.sertifika .inner-sertifika .child-sertifika:hover {
+  border: 1px solid #24caac;
+}
+
+.sertifika .inner-sertifika .child-sertifika .bottom-sertifika {
+  display: flex;
+  justify-content: space-between;
+}
+.sertifika .inner-sertifika .child-sertifika .bottom-sertifika p {
+  color: white;
+}
+
+.sertifika .inner-sertifika .child-sertifika .bottom-sertifika ul {
+  display: flex;
+  color: rgb(255, 234, 0);
+}
+.sertifika .inner-sertifika .child-sertifika .bottom-sertifika ul li {
+  padding-left: 3px;
+}
+
+.child-sertifika h3 {
+  color: white;
+}
+
+/* başarılar */
+
+.inner-basarilar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Ekranın yüzde sekseni di*/
+  width: 80%;
+
+  margin: 0 auto;
+}
+.inner-basarilar .child-basarilar {
+  flex-basis: 40%;
+}
+.inner-basarilar .child-basarilar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.inner-basarilar .child-2-basarilar {
+  flex-basis: 42%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  /* textleri oratalamak için*/
+  text-align: center;
+}
+
+.inner-basarilar .child-2-basarilar .single-detail {
+  flex-basis: 48%;
+  padding: 40px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.inner-basarilar .child-2-basarilar .single-detail:hover {
+  transform: scale(1.1);
+}
+
+.inner-basarilar .child-2-basarilar .sd_1 {
+  background-color: #eaa023;
+  margin-bottom: 15px;
+}
+.inner-basarilar .child-2-basarilar .sd_2 {
+  background-color: #e91e63;
+  margin-bottom: 15px;
+}
+.inner-basarilar .child-2-basarilar .sd_3 {
+  background-color: #24caac;
+}
+.inner-basarilar .child-2-basarilar .sd_4 {
+  background-color: #ae7dba;
+}
+
+/* ------HAKKIMDA---------*/
+
+.inner-hakkimda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.inner-hakkimda .child-hakkimda {
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+  flex-basis: 49%;
+}
+
+.inner-hakkimda .child-hakkimda .img-hakkimda img {
+  border-radius: 50%;
+  width: 100%;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.inner-hakkimda .child-hakkimda p {
+  color: white;
+}
+
+.colored-name {
+  color: #24caac;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* -----İLETİŞİM-------*/
+
+.inner-iletisim {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.inner-iletisim .child-iletisim {
+  flex-basis: 45%;
+}
+
+.inner-iletisim .child-iletisim form {
+  padding: 50px 40px;
+  background: #2f363e;
+  border-radius: 10px;
+}
+
+.inner-iletisim .child-iletisim form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #24292d;
+  border: none;
+  resize: none;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+/* Tıklandığında input veya text area kısmına çerçeveleri beyaz yapar.*/
+.inner-iletisim .child-iletisim form input,
+textarea:focus {
+  color: white;
+}
+
+.inner-iletisim .child-iletisim form input:focus {
+  letter-spacing: 1px;
+}
+
+.inner-iletisim .child-iletisim form textarea:focus {
+  letter-spacing: 1px;
+}
+
+.inner-iletisim .child-iletisim form input:last-child {
+  margin-bottom: 0;
+  background: #24caac;
+  border-radius: 5px;
+  border: 1px solid #24caac;
+  transition: 0.4s ease-in-out;
+}
+
+.inner-iletisim .child-iletisim form input:last-child:hover {
+  background: transparent;
+  color: white;
+}
+
+.menu-bar {
+  display: none;
+}
+
+/* FOOTER */
+
+.inner-footer {
+  background: #0a2031;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  flex-wrap: wrap;
+}
+
+.inner-footer .child-footer ul {
+  display: flex;
+  align-items: center;
+}
+.inner-footer .child-footer ul li {
+  margin-right: 10px;
+}
+.inner-footer .child-footer form input:last-child {
+  margin-bottom: 0;
+  padding: 6px 6px;
+  background: #24caac;
+  border-radius: 5px;
+  border: 1px solid #24caac;
+  transition: 0.4s ease-in-out;
+  color: white;
+}
+
+.inner-footer .child-footer .footer-contact ul li {
+  display: block;
+}
+.inner-footer .child-footer .footer-contact ul li i {
+  padding-right: 2px;
+}
+
+.inner-footer .child-footer form input {
+  padding: 6px 6px;
+  transition: 0.4s ease-in-out;
+}
+.inner-footer .child-footer form input:focus {
+  letter-spacing: 1px;
+}
+
+.inner-footer .child-footer form input:last-child:hover {
+  background: transparent;
+}
+
+a:visited {
+  color: white;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="The official website for The Little Taco Shop">
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!--Sayfanın başlığını temsil eder.-->
+    <header>
+        <h1>Welcomte to The Little Taco Shop</h1>
+        <!--Sayfanın Menüsü için kullanılır-->
+        <nav>
+            <ul>
+                <!--abbr kısaltmaları belirtirken kullanılır.-->
+                <li>
+                    <a href="#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu">Our Menu</a>
+                </li>
+                <li> <a href="./hours.html">Store Hours</a></li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Çizimler fotoğraflar ve kod listeleri içerir-->
+        <figure>
+            <img src="./img/tacolar_giris.jpg" alt="Tacos" title="We love tacos!" width="400" height="267">
+
+            <!--elementinin belirttiği resme başlık koyar-->
+            <figcaption>
+                Tacos and A Drink
+            </figcaption>
+        </figure>
+    </header>
+    <!-- Yatay çizgi ekler.-->
+    <hr>
+
+    <!-- Web sayfasının ana içeriği bölümünü belirtir.-->
+    <main>
+
+        <!-- Makale vb. metinleri tanımlamak ve yerleştirmek için kullanılır. -->
+        <!-- id ile bu article kod içinde #about etiketi ile ulaşma imkanı olur.-->
+        <article id="about">
+            <h2>About <abbr title="The Little 
+                Taco Shop">LTS</abbr></h2>
+            <p>
+                <abbr title="The Little Taco Shop">LTS</abbr> was founded in
+
+                <!-- Tarayıcılarda görsel bir etkisi yoktur.-->
+                <time datetime="2021-02-14">2021-02-14</time>. Our shop
+                was built from a
+
+                <!-- Bold fontta yazı sağlar.-->
+                <strong> of tacos</strong>. We hope
+                our shop adds a unique interesting town.
+            </p>
+
+            <!--  ana içeriğin dışında kalan kısımı tanımlar.-->
+
+            <aside>
+                <h3>Taco Trivia</h3>
+
+                <!-- Tıklanabilir bir bölüm ve  genişleyip ek bilgileri gösterir.-->
+                <details>
+                    <summary>
+                        Clict to reveal taco facts!
+                    </summary>
+                    <p>Tacos originated in Mexioc.</p>
+                    <p>The world's largest taco weighed over 5 tons.(
+
+                        <!-- etiketi bir kaynağın adını vurgulamak için kullanılır.-->
+                        Source: <cite>
+                            <a href="https://google.com" target="_blank">Smithsonian Magazine</a></cite>
+                        )
+                    </p>
+                </details>
+            </aside>
+
+        </article>
+
+        <article id="menu">
+            <h2> Our Menu</h2>
+
+            <!--Bir tabloyu başlatır-->
+            <table>
+                <!--Tablonun başlığı-->
+                <caption>Our Tacos</caption>
+
+                <!-- Tablonın başlık satırlarıdır.-->
+                <thead>
+
+                    <!-- Tablonun(başlık/veri) satırlarını tanımlar-->
+                    <tr>
+                        <!--{scope col} bu hücrenin bir sütun başlığı olduğunu belirtir. -->
+                        <th scope="col">Tacos</th>
+                        <th scope="col"><abbr title="Quantitiy">QTY</abbr></th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+
+                <!-- Tablonun veri satırlarını tanımlar(gövde).-->
+                <tbody>
+                    <tr>
+                        <!-- {rowspan} hücrenin kaç satır kapsayacağını belirtir.-->
+                        <th scope="row" rowspan="3">
+                            Crunchy
+
+
+                            <!-- {th} Tablo başlık hücresidir.-->
+                        </th>
+
+                        <!--Tablo verilerini temsil eden hücreyi açar.-->
+                        <td>1</td>
+                        <td> $1.50 </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td> $2.50 </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td> $3.40 </td>
+                    </tr>
+
+
+                    <tr>
+                        <!-- {rowspan} hücrenin kaç satır kapsayacağını belirtir.-->
+                        <th scope="row" rowspan="3">
+                            Salty
+                        </th>
+                        <td>1</td>
+                        <td> $0.50 </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td> $0.90 </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td> $1.00 </td>
+                    </tr>
+                    <!-- {rowspan} hücrenin kaç satır kapsayacağını belirtir.-->
+                    <th scope="row" rowspan="3">
+                        Sweety
+                    </th>
+                    <td>1</td>
+                    <td> $5.90 </td>
+
+                    <tr>
+                        <td>2</td>
+                        <td> $7.50 </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td> $9.00 </td>
+                    </tr>
+                    </tr>
+                </tbody>
+
+                <!-- Tablonun foot bilgi kısmını tanımlar.-->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Chips &amp; Salsa $2
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <p>
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
+    </main>
+
+    <hr>
+    <hr>
+
+    <!-- Web sayfasının en altındaki içerikler.-->
+    <footer>
+
+        <!--{&copy;} C simgesini metine ekler.-->
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+</body>
+
+
+
+</html>

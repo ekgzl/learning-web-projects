@@ -1,0 +1,17 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+caption {
+    display: table-caption;
+    text-align: center;
+    border: 1px solid black;
+}

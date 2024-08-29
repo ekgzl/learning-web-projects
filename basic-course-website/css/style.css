@@ -1,0 +1,151 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tüm {a} etiketleri için geçerli rulesetler*/ 
+a{
+    color: #fff;   
+}
+
+.container{
+    max-width: 1200px;
+    /* 
+    bu elementin çevresine koyduğu boşluktur.
+    */
+    margin: 0 auto;
+    /* içerik ile border arasındaki boşluk*/
+    /* block -> yukarı ve aşağı
+    inline -> sağ ve sol
+    */
+    padding: 0 20px;
+}
+
+.course-container{
+    margin: 0px 10px;
+    flex:2;
+}
+
+.all-courses{
+
+    /* 
+    İçindekilerin yatay eksende sığmak için boyutlarını otomatik ayarlar.
+    */ 
+    display:flex;
+
+    
+
+}
+
+/* 
+? Sadece header'i seçer arkaplan olarak.
+*/
+header{
+    background-color: #2c3e55;
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+
+/* 
+?Birden fazla elementi seçme.
+*/
+header h1,nav{
+    /* 
+    Text'lerin konumunu belirler.
+    */
+    text-align: center;
+}
+
+nav ul{
+    /* Listelerin solundaki bulletları kaldırır*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    /* {justify-content main axis yönünde hizalama yapar*/
+    justify-content: center;
+}
+
+nav ul li{
+    display:inline;
+    margin: 15px;
+}
+
+nav a{
+
+    /* Text üzerindeki her şeyi kaldırır.*/
+    text-decoration: none;
+}
+
+
+main{
+        background-color: #ecf0f1;
+        padding: 20px 0;
+}
+
+.hero{
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.hero h2{
+    color:#2c3e55;
+}
+
+.hero h3{
+    color: #2c3e55;
+}
+
+.hero ul{
+    list-style-position:inside
+}
+
+.cta-button{
+    display: inline-block;
+    background-color: #3498db;
+    color:#ecf0f1;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 300ms background-color;
+}
+
+.cta-button:hover{
+    background-color: #2980b9;
+}
+
+.courses{
+    padding: 40px 0px;
+}
+
+.course{
+    margin-bottom: 40px;
+    /*  İçerdeki elemanların yan ya olmasını sağlar.*/
+    display: flex;
+    /* flexboxın içindeki öğelerin dikey hizalamasını sğlar.*/
+    align-items: center;
+    padding: 10px;
+
+    /*  {solid} düz çerçeve sunar noktalı vs. değil.*/
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    /* Farenin cursor konuma geçmesine neden olur.*/
+    cursor: pointer;
+
+    transition: 300ms all;
+}
+
+.course-info{
+    padding-left: 2%;
+}
+
+/* B*/
+.course:hover {
+    border-color: black;
+}

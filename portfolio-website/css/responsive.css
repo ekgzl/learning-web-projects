@@ -1,0 +1,128 @@
+@media screen and (max-width: 770px) {
+  .navbar {
+    width: 80%;
+  }
+
+  .logo h2 a {
+    font-size: 20px;
+    display: block;
+    margin-right: 90px;
+  }
+
+  #menu-bar {
+    display: grid;
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    background: #24292d;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    transition: top 0.3s;
+    top: -450px;
+  }
+
+  .nav-links li a {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    display: block;
+  }
+
+  .child-anasayfa2 {
+    width: 70%;
+  }
+
+  .child-anasayfa h1 {
+    font-size: 65px;
+  }
+
+  .inner-anasayfa {
+    flex-direction: column-reverse;
+  }
+
+  .inner-yazilimlar {
+    flex-wrap: wrap;
+  }
+
+  .yazilimlar .inner-yazilimlar .child-yazilimlar {
+    margin: 10px;
+
+    /* Burada 100% demek sağdan sola tüm sekmeyi kaplasın edmektir.*/
+    flex-basis: 100%;
+  }
+
+  .upper-yazilimlar h2 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .inner-sertifika {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .child-sertifika {
+    width: 80%;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inner-basarilar .child-2-basarilar .single-detail {
+    flex-basis: 100%;
+    margin: 5px;
+  }
+
+  .inner-basarilar .child-basarilar {
+    flex-basis: 100%;
+  }
+
+  .inner-basarilar .child-2-basarilar {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .inner-hakkimda .child-hakkimda {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .inner-hakkimda .child-hakkimda:last-child {
+    margin-bottom: 0px;
+  }
+
+  .inner-iletisim .child-iletisim {
+    flex-basis: 100%;
+    width: 80%;
+  }
+  .inner-footer .child-footer {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-class {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-class input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 6px 6px;
+  }
+
+  .footer-contact {
+    justify-content: space-between;
+  }
+}

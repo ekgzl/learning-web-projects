@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding:0;
+
+    /*Taşmayı engeller.*/
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+/* HEADER-START*/
+
+.header{
+
+    display: flex;
+
+    /* dikeyde merkeze koyar.*/
+    /* item bir grup içindeki itemleri dikeyde aynı hizaya sokar*/
+    align-items: center;
+
+    /* yatayda merkeze koyar.*/
+    /* content ise grup olarak merkeze koyar.*/
+    justify-content: center;
+
+    /* Alttan üstten 50 sağ sol 5*/
+    margin: 50px 5px;
+
+}
+
+.logo{
+    display: flex;
+
+    align-items: center;
+
+    margin-right: 6px;
+}
+
+.header .logo .circle{
+
+    /* inline block yaparak onu inline durumdan çıkarıyoruz. ve yan yana sıralar*/
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+
+/* Spanlara renk vererek onları görünür hale getiriyoruz bkz: header.logo.circle*/
+.header .logo .logo-circle .circle-1{
+    background-color: #887a9c;
+    margin-left: 10px;
+}
+
+.header .logo .logo-circle .circle-2{
+    background-color: #4F93A6;
+}
+
+.logo-circle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+
+/* HEADER FINISH*/
+
+/*ABOUT STARTED */
+
+
+.about{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    overflow: hidden;
+}
+
+.about .about-picture{
+    display: flex;
+
+    align-items: center;
+}
+    /* about-picture altındaki tüm imgleri kapsar*/
+.about .about-picture img{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+    transition: 500ms ease;
+}
+.about .about-picture img:hover{
+    transform: translateY(-5px);
+}
+.about .about-picture .col-2{
+    padding-bottom: 100px;
+    margin-inline: 20px;
+}
+
+.about .about-picture .col-5{
+    padding-bottom: 100px;
+    margin-inline: 20px;
+}
+
+
+.about .about-info{
+    margin: 0 55px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.about .about-info h1,p{
+    text-align: center  ;
+}
+
+.about .about-info h1{
+    text-align: center;
+}
+
+.about .about-info h1{
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1.2;
+
+    letter-spacing: 0.7px;
+}
+
+
+.about .about-info p{
+    font-size: 14px;
+    letter-spacing: 0.9px;
+
+    font-weight: 500;
+    color: rgb(160, 154, 154);
+
+    margin: 20px 0;
+}
+.about .about-info .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .about-info a{
+    text-decoration: none;
+
+    /* bu text ile border arasındaki paddingi ayarlar*/
+    padding: 13px 35px;
+    color: white;
+    font-size: 12px;
+    border-radius: 35px;
+    font-weight: bold;
+}
+
+.about .about-info .btn-1{
+    background-color: #4F93A6;
+
+    margin-bottom: 15px;
+}
+
+.about .about-info .btn-2{
+    background-color: #887a9c;
+}
+
+.about .about-info span{
+    background-color: #4F93A6;
+    color: #a0d1df
+}
+
+
+/* ABOUT FINISH*/
+
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0;
+}
+
+.line .limit{
+    border: 1px solid #ddd;
+    height: 55px;
+}
+
+.line .cycle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    text-align: center;
+    
+    /* Yukarıdan bir yükseklik verilir ve bu da itemi aşağı iter.*/
+    line-height: 38px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+
+/* Line finished*/
+
+/* Content start */
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content{
+    display: flex;
+    justify-content: center;
+    margin: 50px 200px;
+    flex-direction: row;
+
+    /* Medya görünümünde elementleri aşağıya kayrırır. Normalde nonwrap tanımlanır*/
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 5px;
+    border-radius: 20px;
+}
+
+.container .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .info h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#4F93A6;
+    letter-spacing: 1.8px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    line-height: 1.2px;
+    font-size: 13px;
+}
+.container .info h2{
+    font-weight: bold;
+
+    /*Yatay'da ayarlar */
+    text-align: center;
+    font-weight: bold;
+}
+
+.container .info p{
+    margin-top: 15px;
+    color: #b0b0b0;
+}
+
+
+/* Container Finished*/
+
+/* Footer started*/
+.footer{
+    /*  Relative alan bir nesne normla akıştan çıkar ve kimseyi itmez sağa sola sadece arkaplanda kalır.*/
+    position: relative;
+}
+
+.footer-picture{
+    width: 100%;
+    height: 300px;
+    background-image: url(img/c5.jpg);
+    /* Burada resmin hangi tarafının footer'da gösterilmesi lazım onu verdik.*/
+    background-position: center;
+    /* arkaplan resminin bu alanı kaplaması gerektiğini söylüyor.*/
+    background-size: cover;
+
+    /* yukarıda footerın relative olduğunu söyleyip bunun onu kaplaması gerektiğini absolute ile kaplatıyor taşmaması için*/
+    top: 0;
+    left: 0;
+}   
+
+.footer-info{
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 300px;
+    width: 100%;
+    background-color: #599aacb3;
+}
+
+.footer-info h4,p{
+    background-color: transparent;
+    color: white;
+}
+
+.footer-info h4{
+    font-size: 24px;
+    margin: 10px 70px;
+}
+
+.footer-info p{
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.footer-info a{
+
+    /* Buton yapmak için burada böyle padding kullandık*/
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    background-color: #887a9c;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.footer-info span{
+    background-color: #887a9c;
+    color:#a0d1df;
+}
+
+/* FOOTER FINISHED*/
+
+/* RESPONSIVE-START */
+
+@media screen and  (max-width: 1000px){
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-info a{
+            margin-bottom: 40px;
+    }
+
+    .about .about-info h1{
+        font-size: 35px;
+    }
+
+    .about .about-info .btn{
+        flex-direction: column;
+        
+    }
+
+    .about .about-info{
+        margin: 75px;
+    }
+    
+    .about .about-info p{
+    font-size: 12px;
+    }
+
+ .about{
+    flex-direction: column;
+ }
+}

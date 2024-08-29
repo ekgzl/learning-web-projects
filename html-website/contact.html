@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Enes Kaan">
+    <meta name="description" content="Contact for The Little Taco Shop">
+    <title>Contact Us - LTS</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--Sayfanın başlığını temsil eder.-->
+    <header>
+        <h1>Contact Us</h1>
+        <!--Sayfanın Menüsü için kullanılır-->
+        <nav>
+            <ul>
+                <li>
+                    <!-- "/" ile bir web sitesinin ana sayfasına işaret edebilirsin.-->
+                    <a href="/">Home</a>
+                </li>
+                <!--abbr kısaltmaları belirtirken kullanılır.-->
+                <li>
+                    <a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="/#menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Çizimler fotoğraflar ve kod listeleri içerir-->
+        <figure>
+            <img src="img/Phone_icon.png" alt="Contact" title="Contact for Store" width="400" height="267">
+
+            <!--elementinin belirttiği resme başlık koyar-->
+            <figcaption>
+                Contact
+            </figcaption>
+        </figure>
+    </header>
+    <!-- Yatay çizgi ekler.-->
+    <hr>
+
+    <!-- Web sayfasının ana içeriği bölümünü belirtir.-->
+    <main>
+
+        <!-- Yeni bir sayfa bölümü oluşturur görsel etkisi yoktur.-->
+        <section>
+            <h2>Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get">
+
+                <!-- Bir grup form elemanını bir araya getirir ve gruplar.-->
+                <fieldset>
+
+                    <!-- Form grubunun başlığı-->
+                    <legend> Send Us A Message</legend>
+                    <p>
+
+                        <!-- {label} form elemanının etiketini tanımlar. Kullanıcıya bu form elemanının en amaçka kullanıldığını belirtir.-->
+                        <label for="name">Name:</label>
+                        <!-- {label} Kullanıcıdan veri girişi almak için kullanılan form elemanıdır.-->
+                        <!-- {id} kısmı label kısmındaki for ile tanımlanan değeri alır, css veya js ile metin alanını tanımlamak için kullanılır.-->
+                        <!-- {placeholder} ile kullanıcı veriyi girmeden önce görüntülenen geçici metni belirtir.-->
+                        <!-- {name} sunucuya gönderilen veri için kullanılır.-->
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Your Email" required>
+                    </p>
+
+                    <p>
+                        <label for="message"> Message</label>
+                        <br>
+
+                        <!-- Kullanıcının serbest metin girişi yapabileceği çok satırlı alan oluşturur.-->
+                        <textarea name="message" id="message" cols="25" rows="10" placeholder="Type your message here">
+                </textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        <h2> Our Location</h2>
+        <addres>
+            555 Taco Temptation Lane, Suite T<br>
+            Kansas City, MO
+            <br><br>
+            Phone: <a href="tel: +905531504">+90 553 150</a>
+        </addres>
+        <section>
+
+        </section>
+    </main>
+    <hr>
+
+
+
+    <!-- Web sayfasının en altındaki içerikler.-->
+    <footer>
+
+        <!--{&copy;} C simgesini metine ekler.-->
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+</body>
+
+
+
+</html>
