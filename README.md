@@ -59,7 +59,7 @@ This section features projects starting from simple beginnings, demonstrating my
    - **Description**: Calculates the tip amount based on the total bill and the desired tip percentage. It is a practical tool that demonstrates the use of basic arithmetic operations in JavaScript and user input handling. The project also includes a simple user interface that allows for quick and accurate calculations.
    - **Technologies**: HTML, CSS, JavaScript
 
-     ### 11. **Weather App**
+### 11. **Weather App**
    - **Description**: Retrieves and displays the current weather information based on the user's location. It utilizes an external API to fetch weather data, demonstrating how to work with APIs, handle JSON responses, and update the UI dynamically. This project is an example of building interactive applications that connect with real-time data sources.
    - **Technologies**: HTML, CSS, JavaScript, API integration, Dynamic UI
 
@@ -70,8 +70,3 @@ This section features projects starting from simple beginnings, demonstrating my
 ### 13. **Recipe Finder**
    - **Description**: This is a recipe search application that allows users to search for meals by name. The app fetches data from a meal API and displays the recipe along with its ingredients and a link to view the full recipe. The project emphasizes asynchronous JavaScript, API integration, dynamic HTML content creation, and error handling.
    - **Technologies**: HTML, CSS, JavaScript, Fetch API, DOM Manipulation
-
-
----
-
-Feel free to explore each project, and I hope you find them useful or inspiring as you embark on your own web development journey!
